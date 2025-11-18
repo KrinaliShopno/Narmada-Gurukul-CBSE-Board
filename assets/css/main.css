@@ -16192,3 +16192,56 @@ span.previous_slide.slick-arrow i.bi.bi-chevron-right {
 .text-red {
     color: #CC0000
 }
+
+.gbase-branches {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+}
+
+.gbase-branch {
+    cursor: pointer;
+    text-align: center;
+}
+
+.gbase-branch-field.image {
+    background: #eff2f6;
+    padding: 10px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.gbase-branch-field.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Red Corner Border */
+.gbase-branch-field.image:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-left: 2px solid #cc0000;
+    border-bottom: 2px solid #cc0000;
+    left: -6px;
+    bottom: -6px;
+    border-radius: 4px;
+}
+
+.gbase-branch-field.title {
+    margin-top: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hover Effect */
+.gbase-branch:hover .gbase-branch-field.title {
+    color: #cc0000;
+}
